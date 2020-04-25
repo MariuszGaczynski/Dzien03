@@ -9,9 +9,11 @@ namespace Dziedziczenie.Figury
     class Okrag
     {
         private double srednica;
-        
+
         public double ObliczPole()
         {
-            return 3.14159 * (0.5 * srednica) * (srednica)
+            return Math.PI * Math.Pow(0.5 * srednica, 2);
+             //  return  3.14159 * (0.5 * srednica) * (srednica);
+        }
     }
 }
