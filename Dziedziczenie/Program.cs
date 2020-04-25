@@ -1,6 +1,9 @@
 ﻿using Dziedziczenie.Figury;
+using Dziedziczenie.KlasaAbstrakcyjna;
 using Dziedziczenie.KlasaStatyczna;
+using Dziedziczenie.MetodyWirtualne;
 using Dziedziczenie.Pojazdy;
+using Dziedziczenie.Przeciazanie;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,6 +50,29 @@ namespace Dziedziczenie
             Console.WriteLine("wartosc max = " + Utils.GetMaxValue (2, -23, 5,7,9, 34));
 
             Console.ReadLine();
+
+            Product ap = new Product("mleko", 2.99);
+            ap.ShowPrice();
+
+            Console.ReadLine();
+
+            Wektor wektor1 = new Wektor(2, -4);
+            Wektor wektor2 = new Wektor(-2, 3);
+            Wektor wektor3 = wektor1.Add(wektor2);
+
+            Wektor wektor = wektor1 + wektor2;
+
+            wektor.Print();
+
+            Wektor wektor4 = wektor1 + 2;
+            wektor4.Print();
+
+            Console.ReadLine();
+
+            Kot kot = new Kot();
+            Console.WriteLine(kot);
+
+            Console.ReadKey();
         }
 
        
